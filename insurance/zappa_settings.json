@@ -5,6 +5,7 @@
         "profile_name": "zappa",
         "project_name": "insurance",
         "runtime": "python3.6",
-        "s3_bucket": "insurance-zappa"
+        "s3_bucket": "insurance-zappa",
+        "keep_warm": false
     }
 }
