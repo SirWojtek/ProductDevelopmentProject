@@ -1,0 +1,32 @@
+- model: instances_management.InsuranceInstance
+  pk: 1
+  fields:
+    schema: 1
+    payload: >
+      {
+        "name": "John Wayne",
+        "age": 65,
+        "gender": "male",
+        "economy": "high"
+      }
+- model: instances_management.InsuranceInstance
+  pk: 2
+  fields:
+    schema: 1
+    payload: >
+      {
+        "name": "Madonna",
+        "age": 43,
+        "gender": "female",
+        "economy": "high"
+      }
+- model: instances_management.InsuranceInstance
+  pk: 3
+  fields:
+    schema: 2
+    payload: >
+      {
+        "name": "Flywing Appartments",
+        "address": "56 Beach St, Brisbane",
+        "property_type": "house"
+      }
