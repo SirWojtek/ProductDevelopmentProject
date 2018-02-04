@@ -4,8 +4,9 @@
     name: "Personal"
     schema: >
       {
-        "name": "string",
-        "age": "integer",
+        "name": "text",
+        "age": "number",
+        "bornDate": "date",
         "gender": "ENUM_GENDER",
         "economy": "ENUM_ECONOMY"
       }
@@ -26,8 +27,8 @@
     name: "Property"
     schema: >
       {
-        "name": "string",
-        "address": "string",
+        "name": "text",
+        "address": "text",
         "property_type": "ENUM_PROPERTY_TYPE"
       }
     enums: >

@@ -6,6 +6,7 @@
       {
         "name": "John Wayne",
         "age": 65,
+        "bornDate": "1953-03-23",
         "gender": "male",
         "economy": "high"
       }
@@ -17,6 +18,7 @@
       {
         "name": "Madonna",
         "age": 43,
+        "bornDate": "1975-04-23",
         "gender": "female",
         "economy": "high"
       }

@@ -8,3 +8,11 @@ class InsuranceType(models.Model):
 
     def __str__(self):
         return self.name
+
+    def as_dict(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'schema': self.schema,
+            'enums': self.enums
+        }

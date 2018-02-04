@@ -13,3 +13,6 @@ def get_type(request, id):
     except ObjectDoesNotExist:
         return HttpResponse(status = 404)
 
+def get_all(request):
+    response = [ x.as_dict() for x in InsuranceType.objects.all() ]
+    return JsonResponse(response, safe = False)
