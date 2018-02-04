@@ -2,39 +2,34 @@
   pk: 1
   fields:
     name: "Personal"
-    schema: >
-      {
-        "name": "text",
-        "age": "number",
-        "bornDate": "date",
-        "gender": "ENUM_GENDER",
-        "economy": "ENUM_ECONOMY"
-      }
-    enums: >
-      [
-        {
-          "name": "ENUM_GENDER",
-          "values": ["male", "female", "unspecified"]
-        },
-        {
-          "name": "ENUM_ECONOMY",
-          "values": ["minimum", "medium", "high"]
-        }
-      ]
+    schema:
+        name: "text"
+        age: "number"
+        bornDate: "date"
+        gender: "ENUM_GENDER"
+        economy: "ENUM_ECONOMY"
+    enums:
+        - name: "ENUM_GENDER"
+          values:
+            - male
+            - female
+            - unspecified
+        - name: "ENUM_ECONOMY"
+          values:
+            - minimum
+            - medium
+            - high
 - model: types_management.InsuranceType
   pk: 2
   fields:
     name: "Property"
-    schema: >
-      {
-        "name": "text",
-        "address": "text",
-        "property_type": "ENUM_PROPERTY_TYPE"
-      }
-    enums: >
-      [
-        {
-          "name": "ENUM_PROPERTY_TYPE",
-          "values": ["room", "unit", "house"]
-        }
-      ]
+    schema:
+        name: "text"
+        address: "text"
+        property_type: "ENUM_PROPERTY_TYPE"
+    enums:
+      - name: "ENUM_PROPERTY_TYPE"
+        values:
+          - room
+          - unit
+          - house

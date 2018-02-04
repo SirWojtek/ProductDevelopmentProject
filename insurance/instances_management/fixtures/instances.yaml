@@ -2,33 +2,27 @@
   pk: 1
   fields:
     schema: 1
-    payload: >
-      {
-        "name": "John Wayne",
-        "age": 65,
-        "bornDate": "1953-03-23",
-        "gender": "male",
-        "economy": "high"
-      }
+    payload:
+      name: "John Wayne"
+      age: 65
+      bornDate: "1953-03-23"
+      gender: "male"
+      economy: "high"
 - model: instances_management.InsuranceInstance
   pk: 2
   fields:
     schema: 1
-    payload: >
-      {
-        "name": "Madonna",
-        "age": 43,
-        "bornDate": "1975-04-23",
-        "gender": "female",
-        "economy": "high"
-      }
+    payload:
+      name: "Madonna"
+      age: 43
+      bornDate: "1975-04-23"
+      gender: "female"
+      economy: "high"
 - model: instances_management.InsuranceInstance
   pk: 3
   fields:
     schema: 2
-    payload: >
-      {
-        "name": "Flywing Appartments",
-        "address": "56 Beach St, Brisbane",
-        "property_type": "house"
-      }
+    payload:
+      name: "Flywing Appartments"
+      address: "56 Beach St, Brisbane"
+      property_type: "house"
