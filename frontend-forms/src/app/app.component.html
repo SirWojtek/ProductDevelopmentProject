@@ -1,4 +1,7 @@
 <mat-tab-group>
   <mat-tab *ngFor="let insuranceType of insuranceTypes" label="{{ insuranceType.name }}">
+    <div class="form-container">
+      <app-insurance-form [insuranceType]="insuranceType"></app-insurance-form>
+    </div>
   </mat-tab>
 </mat-tab-group>
