@@ -25,7 +25,10 @@ SECRET_KEY = '2tjbfm3bveks5gf)w6n5etbr91%z!c_&7@db!e0w3dteg2#pe#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '127.0.0.1', 'elsb3mjfmb.execute-api.ap-southeast-2.amazonaws.com' ]
+ALLOWED_HOSTS = [
+    'localhost',
+    'elsb3mjfmb.execute-api.ap-southeast-2.amazonaws.com'
+]
 
 
 # Application definition
@@ -37,11 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'instances_management',
     'types_management',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -86,6 +91,14 @@ DATABASES = {
     }
 }
 
+
+# CORS configuration
+
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'localhost:4200',  # dev frontend
+)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
