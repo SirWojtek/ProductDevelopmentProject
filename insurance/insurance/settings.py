@@ -25,7 +25,7 @@ SECRET_KEY = '2tjbfm3bveks5gf)w6n5etbr91%z!c_&7@db!e0w3dteg2#pe#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'elsb3mjfmb.execute-api.ap-southeast-2.amazonaws.com' ]
+ALLOWED_HOSTS = [ '127.0.0.1', 'elsb3mjfmb.execute-api.ap-southeast-2.amazonaws.com' ]
 
 
 # Application definition
