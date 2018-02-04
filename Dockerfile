@@ -4,6 +4,8 @@ MAINTAINER "Mateusz Okulewicz" momatoku@gmail.com
 
 WORKDIR /var/task
 
+EXPOSE 8000
+
 # Fancy prompt to remind you are in zappashell
 RUN echo 'export PS1="\[\e[36m\]zappashell>\[\e[m\] "' >> /root/.bashrc
 
