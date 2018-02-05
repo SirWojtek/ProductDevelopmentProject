@@ -5,7 +5,7 @@
     schema:
         name: "text"
         age: "number"
-        bornDate: "date"
+        dateOfBirth: "date"
         gender: "ENUM_GENDER"
         economy: "ENUM_ECONOMY"
     enums:
@@ -26,7 +26,7 @@
     schema:
         name: "text"
         address: "text"
-        property_type: "ENUM_PROPERTY_TYPE"
+        propertyType: "ENUM_PROPERTY_TYPE"
     enums:
       - name: "ENUM_PROPERTY_TYPE"
         values:
