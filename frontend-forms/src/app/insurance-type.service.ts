@@ -14,7 +14,7 @@ export interface IEnums {
 export interface IInsuranceType {
   name: string;
   schema: { [name: string]: string };
-  enums: IEnums;
+  enums: IEnums[];
 }
 
 @Injectable()

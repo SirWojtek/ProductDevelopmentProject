@@ -3,6 +3,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { MatTabsModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
+import { MatCardModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material';
+import { MatSnackBarModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -14,6 +18,10 @@ import { InsuranceFormComponent } from './insurance-form.component';
     BrowserModule,
     MatTabsModule,
     MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatSnackBarModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],

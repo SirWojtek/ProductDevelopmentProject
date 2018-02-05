@@ -1,7 +1,18 @@
 <mat-tab-group>
   <mat-tab *ngFor="let insuranceType of insuranceTypes" label="{{ insuranceType.name }}">
     <div class="form-container">
-      <app-insurance-form [insuranceType]="insuranceType"></app-insurance-form>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Insurance form</mat-card-title>
+          <mat-card-subtitle>{{ insuranceType.name }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <app-insurance-form [insuranceType]="insuranceType"></app-insurance-form>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="onSubmit()">SUBMIT</button>
+        </mat-card-actions>
+      </mat-card>
     </div>
   </mat-tab>
 </mat-tab-group>

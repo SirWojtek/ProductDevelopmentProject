@@ -1,5 +1,12 @@
 <form class="insurance-form">
   <mat-form-field *ngFor="let typeName of getTypeNames()" class="insurance-field">
-    <input matInput placeholder="{{ typeName }}">
+    <input *ngIf="isInput(typeName); else select" matInput placeholder="{{ getPlaceholder(typeName) }}" type="{{ getInputType(typeName) }}">
+    <ng-template #select>
+      <mat-select placeholder="{{ getPlaceholder(typeName) }}">
+        <mat-option *ngFor="let option of getOptions(typeName)">
+          {{ option }}
+        </mat-option>
+      </mat-select>
+    </ng-template>
   </mat-form-field>
 </form>

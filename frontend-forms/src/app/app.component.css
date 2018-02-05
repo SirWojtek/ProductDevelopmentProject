@@ -1,3 +1,5 @@
 .form-container {
   padding: 50px 100px;
+  min-width: 150px;
+  max-width: 500px;
 }
