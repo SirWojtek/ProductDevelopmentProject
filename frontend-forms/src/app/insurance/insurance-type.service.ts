@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
-import { environment } from '../environments/environment';
+import { environment } from '../../environments/environment';
 
 export interface IEnums {
   name: string;
