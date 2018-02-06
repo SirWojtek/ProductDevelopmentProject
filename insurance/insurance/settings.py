@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'elsb3mjfmb.execute-api.ap-southeast-2.amazonaws.com'
+    'elsb3mjfmb.execute-api.ap-southeast-2.amazonaws.com',
+    'insurance-forms.s3-website-ap-southeast-2.amazonaws.com'
 ]
 
 
@@ -97,7 +98,8 @@ DATABASES = {
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:4200',  # dev frontend
+    'localhost:4200',  # local
+    'insurance-forms.s3-website-ap-southeast-2.amazonaws.com'  # dev
 )
 
 # Password validation
