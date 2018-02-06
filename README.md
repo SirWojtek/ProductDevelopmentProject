@@ -16,7 +16,7 @@ There is a complete Django project working with `python-zappa` support.
 
 Before you run the backend, you may want to know how the infrastructure is built.
 To prevent environment errors, all dependencies are stored inside Docker container.
-Moreover, insite a container there is a `virtualenv` which encapsulates all `python`
+Moreover, insite a container there is a `virtualenv` which encapsulates all Python
 packages needed to run and deploy backend.
 
 There is only one database instance for both local and deployed backend!
@@ -26,7 +26,7 @@ To run backend localy use provided `Dockerfile` to create the image:
 docker build -t zappa .
 ```
 
-After that, you can enter a previously created image using `enter-dev.sh`.
+After that, you can enter it using `enter-dev.sh`.
 
 When you are inside a container, you should source `virtualenv` first:
 ```
@@ -37,12 +37,12 @@ to enable all needed python packages.
 After those steps, you can enter `/var/task/insurance` and start using Django app.
 
 Tips:
-- if you want your Django server to be visible outsite container,
-you should run it with `python manage.py runserver 0.0.0.0:8000`
+- If you want your Django server to be visible outsite container,
+you should run it with parameters: `python manage.py runserver 0.0.0.0:8000`
 - There is `python-zappa` package configured to deploy this app.
-To deploy basically type `zappa update dev`
-- To seed database with initial content, you can try `python manage.py loaddata instances.yaml`
-and `/python manage.py loaddata types.yaml`
+To do it basically type `zappa update dev`
+- You can seed database with initial content with `python manage.py loaddata instances.yaml`
+and `python manage.py loaddata types.yaml`
 
 ### Frontend
 Frontend of project is located in `frontend-forms` directory. There is
