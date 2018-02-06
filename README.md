@@ -1,18 +1,14 @@
 # ProductDevelopmentProjext
 
-### Models
-If you want to see ORM models used in backend see:
-- `insurance/types_management/models.py`
-- `insurance/instance_management/models.py`
-
-### Deployed app
-Deployed app can be accessed using S3 bucket:
-http://insurance-forms.s3-website-ap-southeast-2.amazonaws.com/
-
 ### Overview
 The purpose of the project is to create complete website
 which is able to store different types of insurance forms in the backend site
 and renders it correctly in the frontend.
+
+### Models
+If you want to see ORM models used in backend see:
+- `insurance/types_management/models.py`
+- `insurance/instance_management/models.py`
 
 ### Backend
 Backend is located in `insurance` directory.
@@ -58,3 +54,8 @@ The default environment is configured to use backend located in `localhost:8000`
 so you may need to start the backend locally before you load the page.
 
 In case of deploy, you can use `build-and-deploy.sh` script located in the root of frontend dir.
+
+### Deployed app
+Deployed app can be accessed using S3 bucket:
+http://insurance-forms.s3-website-ap-southeast-2.amazonaws.com/
+
