@@ -10,6 +10,14 @@ If you want to see ORM models used in backend see:
 - `insurance/types_management/models.py`
 - `insurance/instance_management/models.py`
 
+There are two tables in the system:
+- `InsuranceTypes` - keeps all types of insurances
+- `InsuranceInstances` - keeps filled insurances (all types!)
+
+The main idea is to store irregular data like type schema and filled insurance forms
+in JSON blob field available in PostgreSQL database. That will prevent from creating
+many-to-many relations which are poorly scalable and keeps database structure simple.
+
 ### Backend
 Backend is located in `insurance` directory.
 There is a complete Django project working with `python-zappa` support.
